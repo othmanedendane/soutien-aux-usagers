@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<title> Dépannage </title>
+<link rel="stylesheet" type="text/css" href="../public/page.css">
+
+</head>
+<body>
+
+        <%-include("./partials/menu")%>
+
+        <section>
+
+            <section id="home">
+              <div>
+                <section id="top">
+                  Résumé
+                </section>
+          
+                <br>
+                <br>
+                <section id="resume">
+                <a href="#section1">Comment j'ai eu un bug</a>
+                <br>
+                <a href="#section2">Comment j'ai pu l'identifier</a>
+                <br>
+                <a href="#section3">Comment j'ai pu le régler</a>
+                <br>
+                <a href="#section4">Résultat et test de site de nouveu</a>
+                <br>
+              </section>
+          
+              </div>
+            </section>
+
+            <br>
+            <br>
+            <br>
+            <br>
+          
+            <section id="section1">
+              <div>
+                <span>
+                <section id="mid">
+                  1. Comment j'ai eu un bug
+
+                </section>
+                
+                
+
+                Après avoir créé ce site :  
+              </span>
+              <br>
+              <span>
+                <img id="1" src="../images/pic/1.png">
+                J’ai eu un bug quand j’essayais de développer les dernières étapes :  
+                <img id="2" src="../images/pic/2.png">
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../images/pic/reseau.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Réseau informatique</h5>
+                  <p class="card-text">C'est le réseau qui permet la connexion avec l'internet et l'accés aux sites web !</p>
+                  <a href="https://fr.wikibooks.org/wiki/Les_r%C3%A9seaux_informatiques/Les_mod%C3%A8les_OSI_et_TCP" class="btn btn-primary">Réseau</a>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="../images/pic/couche.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Les couches de réseau</h5>
+                  <p class="card-text">Ces 7 couches de réseau montre toutes les étapes nécessaires de se connecter avec les cables jusqu'à l'accés au serveur web !</p>
+                  <a href="https://www.reseaux-telecoms.net/actualites/lire-les-7-couches-du-modele-osi-28083.html" class="btn btn-primary">Couches</a>
+                </div>
+              </div>
+            </span>
+
+              <br>
+              
+          
+              </div>
+            </section>
+          
+            <br>
+            <br>
+            <section id="section2">
+              <div>
+                <span>
+                <section id="mid">
+                  2. Comment j'ai pu l'identifier
+                </section>
+                <br>
+                <br>
+                Je pouvais plus accèder au site, alors j’ai décidé d’utiliser la commande "ping" sur l’adresse pour isoler le problème : 
+                <br>
+                <img id="win1" src="../images/pic/3.PNG">
+                <br>
+                <br>
+                Alors "ping" ne fonctionne pas (couche 1 / couche 2 ou couche 3) . 
+
+                    J’ai utilisé alors "ipconfig" pour essayer de savoir :
+                <br>
+                <br>
+                <img id="win1" src="../images/pic/4.png">
+                <br>
+                <br>
+                J’ai vu alors « Média déconnecté », ce qui veut dire que le problème vient de la première couche, qui est chargée de la transmission effective des signaux électrique. 
+                <br>
+                
+              </section>
+              
+              <section id="section3">
+                <section id="mid">
+                  3.Comment j'ai pu le régler
+                </section>
+                <br>
+                <br>
+                J’ai vérifié alors mes câbles : 
+                <br>
+                <br>
+                <img id="win1" src="../images/pic/5.jpeg">
+                <br>
+                <br>
+                Et comme prévu le câble qui lie le routeur et la switch était plus là, Je l’ai remis (6) : 
+                <br>
+                <br>
+                <img id="win1" src="../images/pic/6.jpeg">
+              </span>
+              <br>
+            </section>
+          
+            <section id="section4">
+              <section id="mid">
+                4.Résultat et test de site de nouveu
+              </section>
+              <br>
+              <br>
+              Je vais réessayer de faire le "ping 10.30.40.121" : 
+              <br>
+              <br>
+              <img id="win1" src="../images/pic/7.PNG">
+              <br>
+              <br>
+              Et tout marche bien encore ! c’est comme ça que j’ai réussi à déboguer ce problème !  
+              <br>
+              <br>
+              <img id="win1" src="../images/pic/1.png">
+              <br>
+              <br>
+              
+            </span>
+            <br>
+          </section>
+            
+          
+          </section>
+          <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <div id="oth">
+                Copyright © Othmane 2020
+              </div>
+              <br>
+              <br>
+        
+
+        
+
+
+</body>
+</html>

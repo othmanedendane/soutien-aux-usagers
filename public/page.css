@@ -1,0 +1,40 @@
+#top
+{
+    text-align: center;
+    font-size: large;
+    color: red;
+    
+    
+}
+#resume
+{
+    list-style-type: circle;
+    
+}
+#mid
+{
+    font-size: x-large;
+    color: green;
+    text-decoration:underline;
+
+}
+#logo1
+{
+    width: 100px;
+    height: 100px;
+}
+#logo2
+{
+    width: 100px;
+    height: 100px;
+}
+#oth
+{
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: blink;
+    text-align:right;
+    color:#DB7093;
+
+
+}
